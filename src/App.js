@@ -17,7 +17,9 @@ function App() {
     <NavHeader/>
 
       <Container id='container' className='bg-light border border-dark rounded p-4 w-25'>
+      <h1 className='text-center p-4'>Login</h1>
         <FormGroup>
+          
           <Label for="exampleEmail">
             Email
           </Label>
@@ -26,7 +28,7 @@ function App() {
             name="email"
             placeholder="E-mail"
             type="email"
-            className='p-3'
+            className='p-3 mb-4'
           />
         </FormGroup>
         <FormGroup>
@@ -38,14 +40,17 @@ function App() {
             name="password"
             placeholder="Senha"
             type="password"
-            className='p-3'
+            className='p-3 mb-4'
           />
         </FormGroup>
 
-        <Button color="primary" outline>
+        <Button className='p-3' size='lg' color="primary" outline>
           Login
         </Button>
       </Container>
+
+<div></div>
+      
     </div>
   );
 }
